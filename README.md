@@ -39,13 +39,14 @@ Conducted statistical analysis on queries and semantic clustering using Claude A
   <img src="additional-images/insight03.png" alt="Insight 03" width="31%" />
 </p>
 
-
-
 ### Model building 
 Built 2 stage ML pipeline with Information Retrivial and Re-ranking. Specifically:
 - Stage 1: Construct *question-answer* and corresponding *misconception* query using `Qwen 2.5 4B` language model and perform similarity look up to find top 25 matched misconceptions. 
 - Stage 2: Perform re-ranking using `Qwen 2.5 32B` and select top 9 matched misconceptions.
-
+<p float="left">
+  <img src="additional-images/stage01.png" alt="Insight 01" width="49%" />
+  <img src="additional-images/stage02.png" alt="Insight 02" width="49%" />
+</p>
 Additional experiments with ensembles re-ranking pipelines are also performed with notible results.  
 
 | | Public Score | Private Score | 
