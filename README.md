@@ -34,9 +34,9 @@ Our approach consisted of two main parallel tasks:
 ### EDA 
 Conducted statistical analysis on queries and semantic clustering using Claude API, which helps understand the structure of the data. For visualization, this is the conclusion of EDA after categorizing `constructs`, `questions` and `misconceptions`. 
 <p float="left">
-  <img src="additional-images/insight01.png" alt="Insight 01" width="33%" />
-  <img src="additional-images/insight02.png" alt="Insight 02" width="33%" />
-  <img src="additional-images/insight03.png" alt="Insight 03" width="33%" />
+  <img src="additional-images/insight01.png" alt="Insight 01" width="31%" />
+  <img src="additional-images/insight02.png" alt="Insight 02" width="31%" />
+  <img src="additional-images/insight03.png" alt="Insight 03" width="31%" />
 </p>
 
 
