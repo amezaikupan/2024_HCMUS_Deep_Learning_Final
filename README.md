@@ -19,20 +19,44 @@ The task is to build an NLP model capable of predicting misconceptions and incor
 
 Our approach consisted of two main parallel tasks:
 
-1. Data Exploration
+**1. Data Exploration**
 
 - Conducted exploratory data analysis (EDA)
 - Applied statistical methods and data visualization
 - Identified trends, patterns, and challenges in the dataset
 
-2. Model Development
+**2. Model Development**
 - Built and tested machine learning/NLP models for misconception prediction
 - Submitted models to Kaggle for performance evaluation
 - Drew inspiration from both team members’ experience and community approaches used in the competition
 
-## Project Outcomes
-- Conducted statistical analysis on queries and semantic clustering using Claude API 
-- Built 2 stage ML pipeline with Information Retrivial and Re-ranking
+## Results 
+### EDA 
+Conducted statistical analysis on queries and semantic clustering using Claude API, which helps understand the structure of the data. For visualization, this is the conclusion of EDA after categorizing `constructs`, `questions` and `misconceptions`. 
+<p float="left">
+  <img src="additional-images/52.jpg" alt="Insight 01" width="30%" />
+  <img src="additional-images/53.jpg" alt="Insight 02" width="30%" />
+  <img src="additional-images/54.jpg" alt="Insight 03" width="30%" />
+</p>
+
+
+
+### Model building 
+Built 2 stage ML pipeline with Information Retrivial and Re-ranking. Specifically:
+- Stage 1: Construct *question-answer* and corresponding *misconception* query using `Qwen 2.5 4B` language model and perform similarity look up to find top 25 matched misconceptions. 
+- Stage 2: Perform re-ranking using `Qwen 2.5 32B` and select top 9 matched misconceptions.
+
+Additional experiments with ensembles re-ranking pipelines are also performed with notible results.  
+
+| | Public Score | Private Score | 
+|--|--------------|--------------|
+| Before ensemble | 0.49952 | 0.44615 | 
+| After ensemble | 0.5298 | 0.48434 | 
+
+(Score before competition end and final grade) 
+
+Team's kaggle competition information can be found here: [Final Notebook](https://www.kaggle.com/code/caokhoihuynh/model-final?scriptVersionId=218454004)
+
 
 ## Team information 
 
